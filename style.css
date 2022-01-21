@@ -36,6 +36,7 @@ body{
     padding: .6rem 1.5rem;
     border-radius: 20px;
     margin-top: 1.5rem;
+    cursor: pointer;
 }
 .player-heading{
     display: flex;
@@ -53,10 +54,6 @@ body{
     margin-top: 1rem;
 
 }
-.dice-scores img{
-    background-color: #fff;
-    border-radius: 1rem;
-}
 .stats-play{
     display: flex;
     justify-content:space-evenly;
@@ -67,7 +64,38 @@ body{
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    padding: 1.5rem;
+    padding: 1rem;
     background-color: var(--btn-color-1);
-    width: 200px;   
+    width: 200px; 
+    border-radius: 12px; 
+    color: #ffff;
+    opacity: 0.8; 
+    font-size: 1rem;
+}
+.stat-text{
+    opacity: 0.7; 
+}
+.stat-val{
+    font-size: 1.5rem;
+}
+.play-hold-btns{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.button-1, .button-2{
+    text-align: center;
+}
+.btn{
+    border: none;
+    padding: .3rem 1rem;
+    background-color: #fff;
+    font-size: 1rem;
+    margin: .5rem;
+    border-radius: 1.5rem;
+    cursor: pointer;
+}
+.btn:hover,.start-btn button:hover{
+    opacity: 0.8;
 }
