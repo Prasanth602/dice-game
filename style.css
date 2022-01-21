@@ -2,4 +2,72 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+:root{
+    --bg-color-1:#B3292F;
+    --bg-color-2:#6D3074;
+    --btn-color-1:#C03058;
+    --btn-color-2:#B93D61;
+    --block-1-color:#D7A3AF;
+    --block-2-color:#AF6E8C;
+}
+body{
+    background-image: linear-gradient(to bottom right, var(--bg-color-1), var(--bg-color-2));
+    /* height: 100vh; */
+    width: 100%;
+}
+.main-block{
+    width: 60rem;
+    height: 35rem;
+    border-radius: 0.5rem;
+    margin: 9rem auto;
+    background: linear-gradient(to right, var(--block-1-color) 0%, var(--block-1-color) 50%, var(--block-2-color) 50%, var(--block-2-color) 100%);
+}
+.start-btn{
+    text-align: center;
+    opacity: 0.8;
+    
+}
+.start-btn button{
+    border: none;
+    background-color: #fff;
+    font-size: 1rem;
+    padding: .6rem 1.5rem;
+    border-radius: 20px;
+    margin-top: 1.5rem;
+}
+.player-heading{
+    display: flex;
+    justify-content: space-around;
+    font-size: 2.5rem;
+    font-weight: 400;
+    opacity: 0.7;
+}
+.dice-scores{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 5rem;
+    color: var(--bg-color-1);
+    margin-top: 1rem;
+
+}
+.dice-scores img{
+    background-color: #fff;
+    border-radius: 1rem;
+}
+.stats-play{
+    display: flex;
+    justify-content:space-evenly;
+    margin:6rem;
+}
+.stat{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1.5rem;
+    background-color: var(--btn-color-1);
+    width: 200px;   
 }
